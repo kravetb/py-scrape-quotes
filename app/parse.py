@@ -51,7 +51,7 @@ def get_quotes_from_site() -> [Quote]:
             quote = get_information_from_single_page(soup)
             if quote:
                 all_quotes.extend(quote)
-                print(num_of_page)
+                num_of_page += 1
             else:
                 break
 
